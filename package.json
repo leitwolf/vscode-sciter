@@ -1,0 +1,69 @@
+{
+    "name": "vscode-sciter",
+    "displayName": "Sciter",
+    "description": "Sciter support for vscode",
+    "version": "0.0.1",
+    "publisher": "lonewolf",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/leitwolf/vscode-sciter.git"
+	},
+	"bugs": {
+		"url": "https://github.com/leitwolf/vscode-sciter/issues"
+	},
+	"homepage": "https://github.com/leitwolf/vscode-sciter/blob/master/README.md",
+	"keywords": [
+		"CMake",
+		"Syntax"
+	],
+	"icon": "icon.png",
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "tiscript",
+                "aliases": [
+                    "TIScript"
+                ],
+                "extensions": [
+                    ".tis"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "sciter-css",
+                "aliases": [
+                    "SciterCSS"
+                ]
+            },
+            {
+                "id": "sciter-html",
+                "aliases": [
+                    "SciterHTML"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "tiscript",
+                "scopeName": "source.sciter.tis",
+                "path": "./syntaxes/SciterTIS.tmLanguage"
+            },
+            {
+                "language": "sciter-css",
+                "scopeName": "source.sciter.css",
+                "path": "./syntaxes/SciterCSS.tmLanguage"
+            },
+            {
+                "language": "sciter-html",
+                "scopeName": "source.sciter.html",
+                "path": "./syntaxes/SciterHTML.tmLanguage"
+            }
+        ]
+    }
+}

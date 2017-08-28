@@ -16,8 +16,8 @@
 	},
 	"homepage": "https://github.com/leitwolf/vscode-sciter/blob/master/README.md",
 	"keywords": [
-		"CMake",
-		"Syntax"
+		"Sciter",
+		"TIScript"
 	],
 	"icon": "icon.png",
     "categories": [

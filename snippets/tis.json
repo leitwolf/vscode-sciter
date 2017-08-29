@@ -1,0 +1,350 @@
+{
+    "undefined":{
+        "prefix":"undefined",
+        "body":"undefined"
+    },
+    "null":{
+        "prefix":"null",
+        "body":"null"
+    },
+    "true":{
+        "prefix":"true",
+        "body":"true"
+    },
+    "false":{
+        "prefix":"false",
+        "body":"false"
+    },
+    "return":{
+        "prefix":"return",
+        "body":"return"
+    },
+    "break":{
+        "prefix":"break",
+        "body":"break"
+    },
+    "continue":{
+        "prefix":"continue",
+        "body":"continue"
+    },
+    "super":{
+        "prefix":"super",
+        "body":"super"
+    },
+    "typeof":{
+        "prefix":"typeof",
+        "body":"typeof"
+    },
+    "instanceof":{
+        "prefix":"instanceof",
+        "body":"instanceof"
+    },
+    "like":{
+        "prefix":"like",
+        "body":"like"
+    },
+    "yield":{
+        "prefix":"yield",
+        "body":"yield"
+    },
+    "type":{
+        "prefix":"type",
+        "body":"type"
+    },
+    "assert":{
+        "prefix":"assert",
+        "body":"assert"
+    },
+    "debug":{
+        "prefix":"debug",
+        "body":"debug"
+    },
+    "otherwise":{
+        "prefix":"otherwise",
+        "body":"otherwise"
+    },
+    "this":{
+        "prefix":"this",
+        "body":"this"
+    },
+    "self":{
+        "prefix":"self",
+        "body":"self"
+    },
+    "await":{
+        "prefix":"await",
+        "body":"await"
+    },
+    "__FILE__":{
+        "prefix":"__FILE__",
+        "body":"__FILE__"
+    },
+    "__LINE__":{
+        "prefix":"__LINE__",
+        "body":"__LINE__"
+    },
+    "if":{
+        "prefix":"if",
+        "body":"if (${1:true}) {\n\t${2:// code}\n}"
+    },
+    "if else":{
+        "prefix":"ife",
+        "body":"if (${1:true}) {\n\t${2:// code}\n}\nelse {\n\t${3:// code}\n}"
+    },
+    "while":{
+        "prefix":"while",
+        "body":"while (${1:true}) {\n\t${2:// code}\n}"
+    },
+    "do while":{
+        "prefix":"do_while",
+        "body":"do {\n\t${2:// code}\n} while (${1:true});"
+    },
+    "for":{
+        "prefix":"for",
+        "body":"for ( var ${1:i} = 0; ${1:i} < ${2:len} ; ${1:i}++) {\n\t${3:// code}\n}"
+    },
+    "fori":{
+        "prefix":"fori",
+        "body":"for ( var ${1:item} in ${2:list}) {\n\t${3:// code}\n}"
+    },
+    "forkv":{
+        "prefix":"forkv",
+        "body":"for ( var (${1:k},${2:v}) in ${3:obj}) {\n\t${4:// code}\n}"
+    },
+    "switch":{
+        "prefix":"switch",
+        "body":"switch (${1:true}) {\n\tcase ${2:exp1}:\n\t\t${3:// code}\n\tdefault:\n\t\t${4:// code}\n}"
+    },
+    "try catch":{
+        "prefix":"try_catch",
+        "body":"try {\n\t${1:// code}\n}\ncatch (${2:e}){\n\t${3:// code}\n}"
+    },
+    "try catch finally":{
+        "prefix":"try_catch_finally",
+        "body":"try {\n\t${1:// code}\n}\ncatch (${2:e}){\n\t${3:// code}\n}\nfinally {\n\t${4:// code}\n}"
+    },
+    "catch":{
+        "prefix":"catch",
+        "body":"catch (${1:e}){\n\t${2:// code}\n}"
+    },
+    "with":{
+        "prefix":"with",
+        "body":"with (${1:exp}){\n\t${2:// code}\n}"
+    },
+    "include":{
+        "prefix":"include",
+        "body":"include \"${1:file};\""
+    },
+    "namespace":{
+        "prefix":"namespace",
+        "body":"namespace ${1:MyNamespace} {\n\t${2:// code...}\n}"
+    },
+    "class":{
+        "prefix":"class",
+        "body":"class ${1:MyClass} {\n\t${2:// code...}\n}"
+    },
+    "class with contruction":{
+        "prefix":"class_this",
+        "body":"class ${1:MyClass} {\n\tfunction this() {\n\t\t// code...\n\t}\n}"
+    },
+    "property":{
+        "prefix":"property",
+        "body":"property ${1:a}(${2:v}) {\n\tget { return this._${1:a}; }\n\tset {this._${1:a} = ${2:v}; }\n}"
+    },
+    "function":{
+        "prefix":"func",
+        "body":"function ${1:funcName}(${2:params}) {\n\t${3:// code...}\n}"
+    },
+    "var":{
+        "prefix":"var",
+        "body":"var ${1:a} = ${2:1};"
+    },
+    "const":{
+        "prefix":"const",
+        "body":"const ${1:A} = ${2:1};"
+    },
+    "promise":{
+        "prefix":"promise",
+        "body":"promise (${1:code})${2:;}"
+    },
+    "then":{
+        "prefix":"then",
+        "body":"then (onFulfilled : function(data) {\n\t\t${1:// code}\n\t}, onRejected: function(err) {\n\t\t${2:// code}\n\t}\n)${3:;}"
+    },
+    "promise catch":{
+        "prefix":"catch_promise",
+        "body":"catch (onError : function(err) {\n\t\t${1:// code}\n\t}\n)${2:;}"
+    },
+    "promise finally":{
+        "prefix":"finally_promise",
+        "body":"finally (onResolved : function(dataOrErr) {\n\t\t${1:// code}\n\t}\n)${2:;}"
+    },
+    "promise.when":{
+        "prefix":"promise.when",
+        "body":"promise.when(${1:promise1}${2:, promise2})${3:;}"
+    },
+    "stdin.print":{
+        "prefix":"stdin.print",
+        "body":"stdin.print(${1:string});"
+    },
+    "stdin.println":{
+        "prefix":"stdin.println",
+        "body":"stdin.println(${1:string});"
+    },
+    "stdin.printf":{
+        "prefix":"stdin.printf",
+        "body":"stdin.printf(${1:format}, ${2:value1});"
+    },
+    "stdout.print":{
+        "prefix":"stdout.print",
+        "body":"stdout.print(${1:string});"
+    },
+    "stdout.println":{
+        "prefix":"stdout.println",
+        "body":"stdout.println(${1:string});"
+    },
+    "stdout.printf":{
+        "prefix":"stdout.printf",
+        "body":"stdout.printf(${1:format}, ${2:value1});"
+    },
+    "stderr.print":{
+        "prefix":"stderr.print",
+        "body":"stderr.print(${1:string});"
+    },
+    "stderr.println":{
+        "prefix":"stderr.println",
+        "body":"stderr.println(${1:string});"
+    },
+    "stderr.printf":{
+        "prefix":"stderr.printf",
+        "body":"stderr.printf(${1:format}, ${2:value1});"
+    },
+    "eval":{
+        "prefix":"eval",
+        "body":"eval(${1:input});"
+    },
+    "parseData":{
+        "prefix":"parseData",
+        "body":"parseData(${1:input});"
+    },
+    "emit":{
+        "prefix":"emit",
+        "body":"emit(${1:input});"
+    },
+    "load":{
+        "prefix":"load",
+        "body":"load(${1:source}${2:, asServerScript});"
+    },
+    "loadbc":{
+        "prefix":"loadbc",
+        "body":"loadbc(${1:source});"
+    },
+    "compile":{
+        "prefix":"compile",
+        "body":"compile(${1:input}, ${1:output}${3:, asServerScript});"
+    },
+    "store":{
+        "prefix":"store",
+        "body":"store(${1:filename}, ${2:value});"
+    },
+    "fetch":{
+        "prefix":"fetch",
+        "body":"fetch(${1:filename});"
+    },
+    "hash":{
+        "prefix":"hash",
+        "body":"hash(${1:value});"
+    },
+    "membersOf":{
+        "prefix":"membersOf",
+        "body":"membersOf(${1:obj});"
+    },
+    "rand":{
+        "prefix":"rand",
+        "body":"rand(${1:maxNumber});"
+    },
+    "gc":{
+        "prefix":"gc",
+        "body":"gc();"
+    },
+    "crackUrl":{
+        "prefix":"crackUrl",
+        "body":"crackUrl(${1:url});"
+    },
+    "symbol":{
+        "prefix":"symbol",
+        "body":"symbol(${1:string});"
+    },
+    "color":{
+        "prefix":"color",
+        "body":"color(${1:r}, ${2:g}, ${3:b}${4:, opacity});"
+    },
+    "em":{
+        "prefix":"em",
+        "body":"em(${1:v});"
+    },
+    "pr":{
+        "prefix":"pr",
+        "body":"pr(${1:v});"
+    },
+    "px":{
+        "prefix":"px",
+        "body":"px(${1:v});"
+    },
+    "cm":{
+        "prefix":"cm",
+        "body":"cm(${1:v});"
+    },
+    "pt":{
+        "prefix":"pt",
+        "body":"pt(${1:v});"
+    },
+    "dip":{
+        "prefix":"dip",
+        "body":"dip(${1:v});"
+    },
+    "flex":{
+        "prefix":"flex",
+        "body":"flex(${1:v});"
+    },
+    "rad":{
+        "prefix":"rad",
+        "body":"rad(${1:v});"
+    },
+    "deg":{
+        "prefix":"deg",
+        "body":"deg(${1:v});"
+    },
+    "JSON.stringify":{
+        "prefix":"JSON.stringify",
+        "body":"JSON.stringify(${1:value}${2:, replacer}${3:, space});"
+    },
+    "JSON.parse":{
+        "prefix":"JSON.parse",
+        "body":"JSON.parse(${1:text}${2:, reviver});"
+    },
+    "URL.parse":{
+        "prefix":"URL.parse",
+        "body":"URL.parse(${1:url});"
+    },
+    "URL.relative":{
+        "prefix":"URL.relative",
+        "body":"URL.relative(${1:url}, ${2:baseUrl});"
+    },
+    "URL.absolute":{
+        "prefix":"URL.absolute",
+        "body":"URL.absolute(${1:relUrl}, ${2:baseUrl});"
+    },
+    "URL.encode":{
+        "prefix":"URL.encode",
+        "body":"URL.encode(${1:str});"
+    },
+    "URL.encodeParam":{
+        "prefix":"URL.encodeParam",
+        "body":"URL.encodeParam(${1:str});"
+    },
+    "URL.decode":{
+        "prefix":"URL.decode",
+        "body":"URL.decode(${1:str});"
+    }
+}

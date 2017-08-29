@@ -21,7 +21,8 @@
     ],
     "icon": "icon.png",
     "categories": [
-        "Languages"
+        "Languages",
+        "Snippets"
     ],
     "contributes": {
         "languages": [

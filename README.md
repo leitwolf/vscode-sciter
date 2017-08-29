@@ -4,6 +4,7 @@ tmLanguage files source: [https://github.com/svitalij/sciter.tm.syntax](https://
 
 # Features
 Colorizers.
+Snippets.
 
 # Settings
 
